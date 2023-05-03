@@ -1,0 +1,14 @@
+.form-control{
+    width: auto;
+    
+}
+.form-range
+{
+    width: 209.5px;
+}
+label{
+    display: block;
+}
+.form-select{
+    width: auto;
+}
