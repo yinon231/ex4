@@ -1,14 +1,24 @@
-.form-control{
-    width: auto;
-    
-}
-.form-range
+input[type="submit"]:hover
 {
-    width: 209.5px;
+    background-color: #0d6efd;
 }
-label{
-    display: block;
+input[type="submit"]{
+    color: #ffff;
+    border-color:#0d6efd;
+    background-color:#0d6efd;
+}
+.btn:first-child:active{
+    color: #ffff;
+    border-color:#0d6efd;
+    background-color:#0d6efd;
 }
 .form-select{
     width: auto;
 }
+.container-fluid{
+    --bs-gutter-x: 50%;
+}
+h1{
+    margin-bottom: 1rem!important;
+}
+
