@@ -109,26 +109,6 @@ window.onload=()=>{
         addressInput.classList.add('is-valid');
     });
 
-    const checkboxes = document.querySelectorAll('input[name="interests[]"]');
-    function validateCheckbox() {
-    const checkNote=document.getElementById('check-note');
-    const checkboxesChecked = document.querySelectorAll('input[name="interests[]"]:checked');
-    if (checkboxesChecked.length !== 3) {
-        checkNote.style.display="block";
-        return false;
-    } else {
-        checkNote.style.display="none";
-        return true;
-    }
-    }
-
-    checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-        validateCheckbox();
-    });
-    });
-
-
       const select = document.getElementById("select-age");
       function validateAge(){
         const selectedOption = select.value;
@@ -157,10 +137,9 @@ window.onload=()=>{
         const isEmailValid = validateEmail();
         const isUrlValid = validateUrl();
         const isPhoneValid = validatePhone();
-        const isCheckboxValid = validateCheckbox();
         const isAgeValid = validateAge();
     
-        if (isNameValid && isPasswordValid && isEmailValid && isUrlValid && isPhoneValid && isCheckboxValid && isAgeValid) {
+        if (isNameValid && isPasswordValid && isEmailValid && isUrlValid && isPhoneValid && isAgeValid) {
             form.submit();
         }
     });
