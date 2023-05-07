@@ -7,6 +7,9 @@ input[type="submit"]{
     border-color:#0d6efd;
     background-color:#0d6efd;
 }
+#val_temp{
+   border:none;
+}
 .btn:first-child:active{
     color: #ffff;
     border-color:#0d6efd;
@@ -18,6 +21,7 @@ input[type="submit"]{
 .container-fluid{
     --bs-gutter-x: 50%;
 }
+
 h1{
     margin-bottom: 1rem!important;
 }

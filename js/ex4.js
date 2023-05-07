@@ -1,4 +1,8 @@
+function displayVal(val_temp) {
+    document.getElementById('val_temp').value = val_temp;
+  }
 window.onload=()=>{
+    
     let selectAge=document.getElementById("select-age");
     for(let i=23;i<=38;i++)
     {
@@ -20,7 +24,7 @@ window.onload=()=>{
     const ageInput=document.getElementById('select-age');
     function validateName()
     {
-        const regex = /^[a-zA-Z]+\s/;
+        const regex = /^[a-zA-Z]+\s+[a-zA-Z]/;
         if (!regex.test(nameInput.value)) 
         {  
             nameInput.classList.add('is-invalid');
